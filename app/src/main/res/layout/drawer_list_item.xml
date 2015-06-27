@@ -8,12 +8,13 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/app_yellow">
 
         <ImageView
             android:id="@+id/icon"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_margin="10dp" />
 
         <TextView
@@ -22,15 +23,13 @@
             android:layout_height="match_parent"
             android:minHeight="?android:attr/listPreferredItemHeightSmall"
             android:textAppearance="?android:attr/textAppearanceListItemSmall"
-            android:layout_margin="10dp"
-            android:gravity="center|center_horizontal"
-            android:textSize="25dp" />
+            android:gravity="center|center_vertical|center_horizontal"
+            android:textSize="30dp"
+            android:text="try" />
     </LinearLayout>
 
     <!--android:contentDescription="@string/desc_list_item_icon" -->
     <!--android:src="@drawable/ic_home"-->
-
-
     <!--android:textColor="@color/list_item_title"-->
 
     <!--android:textColor="@color/counter_text_color"/ -->

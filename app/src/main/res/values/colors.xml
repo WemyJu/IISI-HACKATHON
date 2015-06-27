@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_yellow">#eadd00</color>
+    <color name="list_yellow">#CCeadd00</color>
+    <color name="app_bright_green">#24e2b0</color>
+    <color name="app_dark_green">#14a586</color>
+</resources>
