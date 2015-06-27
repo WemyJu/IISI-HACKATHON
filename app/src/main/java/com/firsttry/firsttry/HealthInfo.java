@@ -6,15 +6,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class Version extends Fragment {
+public class HealthInfo extends Fragment {
 
-    public Version(){}
+    public HealthInfo(){}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_version, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_health_info, container, false);
 
         return rootView;
     }

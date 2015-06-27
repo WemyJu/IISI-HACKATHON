@@ -1,4 +1,4 @@
-package com.firsttry.firsttry;
+package com.firsttry.firsttry.json;
 
 /**
  * Created by mac on 15/6/27.

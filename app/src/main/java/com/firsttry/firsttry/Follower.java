@@ -6,15 +6,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class Version extends Fragment {
+public class Follower extends Fragment {
 
-    public Version(){}
+    public Follower(){}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_version, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_follower, container, false);
 
         return rootView;
     }

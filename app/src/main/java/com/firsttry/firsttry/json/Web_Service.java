@@ -1,6 +1,5 @@
-package com.firsttry.firsttry;
+package com.firsttry.firsttry.json;
 
-import android.support.v4.util.LogWriter;
 import android.util.Log;
 
 import com.android.volley.Request;

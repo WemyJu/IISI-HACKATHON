@@ -1,5 +1,6 @@
 package com.firsttry.firsttry;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -11,16 +12,15 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.firsttry.firsttry.json.Appaction;
+import com.firsttry.firsttry.json.Constants;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -28,7 +28,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 
-public class LoginPage extends ActionBarActivity {
+public class LoginPage extends Activity {
     /*********************************************************************************/
     // debug
     public static final String TAG = "MainActivity";
@@ -161,28 +161,5 @@ public class LoginPage extends ActionBarActivity {
         }
         return false;
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_login_page, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
 
 }
