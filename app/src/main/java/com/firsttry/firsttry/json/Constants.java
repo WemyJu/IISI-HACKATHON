@@ -27,8 +27,11 @@ public class Constants {
     public static final String PREFERENCE_NAME = "FirstTryPreference"; /* the name of the preference */
     //public static final String DB_NAME = "template-db";
     //public static final String IMG_FOLDER_NAME = "download";
-    //public static final String HOST = "IP";
+    public static final String HOST = "http://192.168.206.111/FirstTry";
 
     //API uri
-    public static final String API_URL = "http://192.168.206.111/FirstTry/map";
+    public static final String API_MY_HISTORY_URL = HOST+"/map2";
+    public static final String API_MY_WEATHER_REPO_URL = HOST+"/xml";
+    public static final String API_SHARE_POS_URL = HOST+"/health";
+    public static final String API_LOGIN_URL = HOST+"/login";
 }

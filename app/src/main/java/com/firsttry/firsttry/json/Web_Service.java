@@ -42,9 +42,10 @@ public class Web_Service {
     public Web_Service(RequestQueue queue) {
         mQueue = queue;
     }
+
     public Request<?> api_getMain(String id, String pw, Response.Listener<JSONObject> listener, Response.ErrorListener errorListener) {
 
-        String uri = String.format(Constants.API_URL);
+        String uri = String.format(Constants.API_LOGIN_URL);
 
         if(D_API_ACTIVITY_FUTURE) {
             Log.w(TAG, "api uri = " + uri);
