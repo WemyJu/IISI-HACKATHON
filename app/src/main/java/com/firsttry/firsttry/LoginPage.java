@@ -12,9 +12,12 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -23,6 +26,7 @@ import com.firsttry.firsttry.json.Constants;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -51,7 +55,7 @@ public class LoginPage extends Activity {
     // UI
     ProgressDialog alertProgress;
     AlertDialog.Builder searchMsg;
-    ImageButton login_btn;
+    TextView login_btn;
     EditText id_et, pw_et;
     /*********************************************************************************/
     // Lifecycle
@@ -64,6 +68,8 @@ public class LoginPage extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
+        /* cancel virtual keyboard auto express */
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         mSharedPreferences = this.getSharedPreferences(Constants.PREFERENCE_NAME, 0);
         id = mSharedPreferences.getString("id", "");
         pw = mSharedPreferences.getString("pw", "");
@@ -79,7 +85,7 @@ public class LoginPage extends Activity {
         }*/
         id_et = (EditText) findViewById(R.id.id_editText);
         pw_et = (EditText) findViewById(R.id.pw_editText);
-        login_btn = (ImageButton) this.findViewById(R.id.login_btn);
+        login_btn = (TextView) this.findViewById(R.id.login_btn);
         login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

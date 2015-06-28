@@ -26,6 +26,8 @@ public class MyHistory extends Fragment {
         // 開啟執行JavaScript功能
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebChromeClient(new WebChromeClient());
+        webView.loadUrl(Constants.API_MY_HISTORY_URL);
+
         my_history_btn = (ImageView)rootView.findViewById(R.id.my_history_btn);
         my_history_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,11 +41,7 @@ public class MyHistory extends Fragment {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                AddHealthInfo nextFrag= new AddHealthInfo();
-                MyHistory.this.getFragmentManager().beginTransaction()
-                        .replace(R.id.container, nextFrag)
-                        .addToBackStack(null)
-                        .commit();
+                webView.loadUrl(Constants.API_MY_WEATHER_REPO_URL);
             }
         });
         add_health_btn = (ImageView)rootView.findViewById(R.id.add_health_info_btn);
@@ -51,7 +49,7 @@ public class MyHistory extends Fragment {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                webView.loadUrl(Constants.API_MY_WEATHER_REPO_URL);
+                webView.loadUrl(Constants.API_SHARE_POS_URL);
             }
         });
         share_pos_btn = (ImageView)rootView.findViewById(R.id.share_pos_btn);
@@ -59,7 +57,11 @@ public class MyHistory extends Fragment {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                webView.loadUrl(Constants.API_SHARE_POS_URL);
+                AddHealthInfo nextFrag= new AddHealthInfo();
+                MyHistory.this.getFragmentManager().beginTransaction()
+                        .replace(R.id.container, nextFrag)
+                        .addToBackStack(null)
+                        .commit();
             }
         });
         return rootView;
