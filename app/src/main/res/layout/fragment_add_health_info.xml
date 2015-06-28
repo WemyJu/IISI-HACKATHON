@@ -1,10 +1,161 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.firsttry.firsttry.Follower.AddHealthInfo">
+    android:layout_height="match_parent" tools:context="com.firsttry.firsttry.MyHistory">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top">
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView30"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.02" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView28"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="4"
+                android:text="體溫"
+                android:background="@color/app_yellow"
+                android:textColor="@color/app_dd_gray"
+                android:longClickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="40dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText3"
+                android:layout_weight="4"
+                android:background="@color/app_bright_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView35"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="4"
+                android:text="血壓"
+                android:background="@color/app_yellow"
+                android:textColor="@color/app_dd_gray"
+                android:longClickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="40dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText4"
+                android:layout_weight="4"
+                android:background="@color/app_bright_gray" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView33"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.02" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView36"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="4"
+                android:text="血糖"
+                android:background="@color/app_yellow"
+                android:textColor="@color/app_dd_gray"
+                android:longClickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="40dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText5"
+                android:layout_weight="4"
+                android:background="@color/app_bright_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView32"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="4"
+                android:text="+ 醫療報告 "
+                android:background="@color/app_yellow"
+                android:textColor="@color/app_dd_gray"
+                android:longClickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="40dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText6"
+                android:layout_weight="4"
+                android:background="@color/app_yellow" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView34"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.05" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView2"
+            android:src="@drawable/repotaction"
+            android:layout_gravity="center"
+            android:layout_weight="0.9" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView23"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.03" />
+
+    </LinearLayout>
 
 </FrameLayout>

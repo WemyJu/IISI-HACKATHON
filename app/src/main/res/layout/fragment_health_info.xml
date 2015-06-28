@@ -1,20 +1,153 @@
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.firsttry.firsttry.HealthInfo">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.firsttry.firsttry.MyHistory">
 
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top">
 
         <WebView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/webView"
-            android:layout_gravity="center_horizontal" />
+            android:id="@+id/webView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView30"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView28"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="4"
+                android:text="體溫"
+                android:background="@color/app_yellow"
+                android:textColor="@color/app_dd_gray"
+                android:longClickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="40dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText3"
+                android:layout_weight="4"
+                android:background="@color/app_bright_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView35"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="4"
+                android:text="血壓"
+                android:background="@color/app_yellow"
+                android:textColor="@color/app_dd_gray"
+                android:longClickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="40dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText4"
+                android:layout_weight="4"
+                android:background="@color/app_bright_gray" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView33"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView36"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="4"
+                android:text="血糖"
+                android:background="@color/app_yellow"
+                android:textColor="@color/app_dd_gray"
+                android:longClickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="40dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText5"
+                android:layout_weight="4"
+                android:background="@color/app_bright_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView32"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2.7"
+                android:text=" + 醫療報告 "
+                android:background="@color/app_yellow"
+                android:textColor="@color/app_dd_gray"
+                android:longClickable="true"
+                android:gravity="center_vertical|left"
+                android:textSize="40dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView34"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.01" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/add_health_btn"
+            android:src="@drawable/repotaction"
+            android:layout_gravity="center"
+            android:layout_weight="0.9" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView23"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.01" />
+
     </LinearLayout>
+
 </FrameLayout>
