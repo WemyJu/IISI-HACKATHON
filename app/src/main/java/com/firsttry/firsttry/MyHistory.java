@@ -57,11 +57,8 @@ public class MyHistory extends Fragment {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                AddHealthInfo nextFrag= new AddHealthInfo();
-                MyHistory.this.getFragmentManager().beginTransaction()
-                        .replace(R.id.container, nextFrag)
-                        .addToBackStack(null)
-                        .commit();
+                // TODO Auto-generated method stub
+                webView.loadUrl(Constants.API_HOSPITAL_URL);
             }
         });
         return rootView;

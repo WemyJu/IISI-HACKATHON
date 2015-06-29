@@ -102,7 +102,7 @@ public class LoginPage extends Activity {
                         /*editor.putString("id", id)
                                 .putString("pw", id)
                                 .commit();*/
-                        Intent it = new Intent(LoginPage.this, MainActivity.class);
+                        Intent it = new Intent(LoginPage.this, HomePage.class);
                         startActivity(it);
                     //}
                 }

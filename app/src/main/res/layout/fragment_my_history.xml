@@ -86,7 +86,7 @@
                 android:id="@+id/share_pos_btn"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="2.5"
-                android:src="@drawable/share_position" />
+                android:src="@drawable/c" />
 
             <TextView
                 android:layout_width="fill_parent"

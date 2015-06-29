@@ -176,18 +176,15 @@ public class MainActivity extends ActionBarActivity {
                 fragment = new HealthInfo();
                 break;
             case 3:
-                fragment = new MyFavorite();
-                break;
-            case 4:
                 fragment = new TakePhoto();
                 break;
-            case 5:
+            case 4:
                 fragment = new Follower();
                 break;
-            case 6:
+            case 5:
                 fragment = new Version();
                 break;
-            case 7:
+            case 6:
                 fragment = new Help();
                 break;
 

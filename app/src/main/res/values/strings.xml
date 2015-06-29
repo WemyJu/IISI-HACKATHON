@@ -24,7 +24,6 @@
         <item >查看進度</item>
         <item >我的歷程</item>
         <item >健康資訊</item>
-        <item >我的喜愛</item>
         <item >拍張照片</item>
         <item >私密人</item>
         <item >版本設定</item>
@@ -37,7 +36,6 @@
         <item>@drawable/ic_check_progress</item>
         <item>@drawable/ic_my_history</item>
         <item>@drawable/ic_health_info</item>
-        <item>@drawable/ic_my_favorite</item>
         <item>@drawable/ic_take_photo</item>
         <item>@drawable/ic_follower</item>
         <item>@drawable/ic_setting</item>
@@ -46,6 +44,7 @@
 
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_home_page">HomePage</string>
 
 
 </resources>

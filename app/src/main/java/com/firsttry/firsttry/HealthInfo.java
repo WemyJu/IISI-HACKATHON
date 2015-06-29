@@ -1,7 +1,13 @@
 package com.firsttry.firsttry;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.Fragment;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +20,8 @@ import com.firsttry.firsttry.json.Constants;
 public class HealthInfo extends Fragment {
     WebView webView;
     ImageView add_health_btn;
+
+
 
     public HealthInfo(){}
     @Override
@@ -33,7 +41,7 @@ public class HealthInfo extends Fragment {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
 
-            }
+                 }
         });
         return rootView;
     }

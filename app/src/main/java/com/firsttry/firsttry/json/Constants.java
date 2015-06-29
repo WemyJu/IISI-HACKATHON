@@ -34,4 +34,5 @@ public class Constants {
     public static final String API_MY_WEATHER_REPO_URL = HOST+"/xml";
     public static final String API_SHARE_POS_URL = HOST+"/health";
     public static final String API_LOGIN_URL = HOST+"/login";
+    public static final String API_HOSPITAL_URL = HOST+"/map3";
 }
